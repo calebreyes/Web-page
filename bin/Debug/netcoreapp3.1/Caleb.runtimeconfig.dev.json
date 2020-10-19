@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\CalebVM\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\CalebVM\\.nuget\\packages"
+    ]
+  }
+}
