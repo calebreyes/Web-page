@@ -4,7 +4,17 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+  batch: true
+  branches:
+    include:
+      - master
+      - release
+
+pr:
+  branches:
+    include:
+      - master
+      - release
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -23,3 +33,4 @@ steps:
     PathtoPublish: '$(Agent.BuildDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
