@@ -11,6 +11,7 @@ trigger:
       - release
 
 pr:
+  batch: true
   branches:
     include:
       - master
